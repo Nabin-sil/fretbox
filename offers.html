@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FretBox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/icon/Fev.png" type="image/x-icon" sizes="16x16 32x32 64x64" />
+    <link rel="shortcut icon" href="images/icon/Fev.png" type="image/x-icon" sizes="16x16 32x32 64x64" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/feature.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css">
+    <style>
+       
+        .imgg{
+            transition: all 0.5s ease;
+            cursor: pointer;
+            z-index: 99999 !important;
+            box-shadow: -1px 3px 20px 8px rgb(252, 213, 95);
+        }
+
+        *{
+            transition: all 0.5s ease !important;
+        }
+
+        .imgg:hover{
+            margin:calc(50px + (120 - 50) * ((100vw - 320px) / (1600 - 320))) auto;
+            transform: scale(1.5);
+            transition: all 0.5s ease;
+            z-index: 9999 !important;
+            box-shadow: 0 0 1px 0 rgba(0,0,0,.1), 0 3px 6px 0 rgba(0,0,0,.05);
+            filter: brightness(125%);
+            cursor: pointer;
+            box-shadow:  -1px 3px 20px 8px rgb(252, 213, 95);
+
+        }
+
+
+        @media (max-width: 400px) {
+
+            .imgg:hover{
+                margin:calc(50px + (100 - 50) * ((100vw - 320px) / (1600 - 320))) auto;
+                transform: scale(1.01);
+                transition: all 0.5s ease;
+                z-index: 9999 !important;
+                box-shadow:  -1px 3px 20px 8px rgb(252, 213, 95);
+                filter: brightness(125%);
+            }
+        }
+
+        .sticky-top{
+            z-index: 1 !important;
+        }
+
+        .linee{
+            font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320)));
+        }
+
+        .linee:after{
+                border-radius: 5px ;
+                content: '';
+                display: block;
+                border-top: 3px solid #000;
+                margin-top: 0.3em;
+                margin: 10px auto 1em;
+                color:#202125 !important;   
+        }
+
+        h4{
+            font-weight: 800;
+            color: #262622;
+        }
+
+        .tc ul {
+            padding-inline-start: calc(15px + (40 - 15) * ((100vw - 320px) / (1600 - 320))) !important;
+        }
+
+        .tc li{
+            font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320)));
+            margin: 6px auto 6px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <img src="images/binarydots.png">
+                        <span>A Product Of Binary Dots Technologies</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <ul>
+                        <li><i class="fas fa-phone"></i><a class="text-dark" href="tel:+91 81270 79900">+91 81270 79900</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="text-dark" href="mailto:info@fretbox.in">info@fretbox.in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="managementapp-feature.html#managementApp">
+                                For Management
+                            </a>
+                            <a class="dropdown-item" href="managementapp-feature.html#complainantApp">
+                                Complainee App
+                            </a>
+                            <a class="dropdown-item" href="managementapp-feature.html#web-app">For Residents / User</a>
+                            <a class="dropdown-item" href="managementapp-feature.html#web-app">For Security / Staff </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="societies.html">Housing Societies</a>
+                            <a class="dropdown-item" href="hostel.html">Hostels</a>
+                            <a class="dropdown-item" href="societies.html">Business Parks</a>
+                        </div>
+
+                       
+
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="feature.html">Platform & Device Independent</a>
+                            <a class="dropdown-item" href="feature.html">Informative Dashboard</a>
+                            <a class="dropdown-item" href="feature.html">Transparency</a>
+                            <a class="dropdown-item" href="feature.html">Multilingual Support</a>
+                            <a class="dropdown-item" href="feature.html">Multichannel Support</a>
+                            <a class="dropdown-item" href="feature.html">Feedback</a>
+                            <a class="dropdown-item" href="feature.html">Reporting & Data Analytics</a>
+                            <a class="dropdown-item" href="feature.html">Customize Support Desk</a>
+                            <a class="dropdown-item" href="feature.html">More Features</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="container jusitfy-content-center">
+        <div class="row mt-3 ">
+            <div class="col text-center">
+               <a href="contact.html"><img class="img-fluid imgg" src="images/offers.jpeg" id="bg" alt="">
+               </a>             </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-auto">
+            <h4 class="linee">Terms and Condition</h4>
+          </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col tc">
+                <ul>
+                    <li>A signup and valid subscription is required to use FretBox web and mobile applications</li>
+                    <li>Offer is valid till <b><u>31 august 2020</u></b> only.</li>
+                    <li> Offer applicable for both Active and De-Active subscribers. </li>
+                    <li>Offer benefits shall not lapse in case of package downgrade or Upgrade.  </li>
+                    <li> Offer shall be provided on all modes of Payment. </li>
+                    <li>The Offer cannot be clubbed with any other existing offer(s) of the Company. Subscriber availing benefit in any other offer of the Company shall not be eligible for this Offer.  </li>
+                    <li> All instructions, rules and conditions on any advertising or promotional materials relating to the Offer form part of these provisions, provided that in the event of any conflict or inconsistency, these provisions shall prevail over all such other instructions, rules and conditions. </li>
+                    <li> In case of any dispute or difference in respect of the offer, the decision of the Company shall be final and binding on all concerned. </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container-fluid px-md-auto pl-4 justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-about">
+                        <h4 class="footer-title">About FretBox</h4>
+                        <p>FretBox is a mission to see happy customers in world. Well implemented into a SAAS product to
+                            improve customer satisfaction score of our customers</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="footer-links">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <h4 class="footer-title">Quick Links</h4>
+                                <ul>
+                                    <li><a href="about-us.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+                                    <li><a href="our-team.html"><i class="fas fa-angle-right"></i> Our Team</a> </li>
+                                    <li><a href="careers.html"><i class="fas fa-angle-right"></i> Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <h4 class="footer-title">Privacy Policy</h4>
+                                <ul>
+                                    <li><a href="terms.html"><i class="fas fa-angle-right"></i> Terms Of Use</a></li>
+                                    <li><a href="privacy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>  </li>
+                                    <li><a href="fretbox-faq.html"><i class="fas fa-angle-right"></i> Frequently asked Question</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links col-lg-4 col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-md-6 col-auto ">
+                            <h4 class="footer-title">Our Services</h4>
+                            <ul>
+                                <li><a href="societies.html"><i class="fas fa-angle-right"></i> Housing Societies</a></li>
+                                <li><a href="hostel.html"><i class="fas fa-angle-right"></i> Hostels</a>  </li>
+                                <li><a href="societies.html"><i class="fas fa-angle-right"></i> Business Parks</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-auto mt-md-0 mt-3">
+                            <h4 class="footer-title">Available on</h4>
+                            <div class="footer-app-download button-group store-buttons ">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.binarydots.fretboxresident">
+                                    <img class=" img-fluid" src="images/google-play.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img class="mt-2 img-fluid" src="images/app-store.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copyright">
+        <div class="container">
+            <p>© Copyright © BinaryDots Technologies. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/fretbox.in/" class="facebook" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+        <a href="mailto:business@fretbox.in" class="google"><i class="far fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/company/fretbox/" target="_blank" class="linkedin"><i
+                class="fab fa-linkedin"></i></a>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <!-- <script type="text/javascript" src="https:https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d1da64ea1300b53"></script> -->
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5bdf1f294cfbc9247c1ea886/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+
+</html>

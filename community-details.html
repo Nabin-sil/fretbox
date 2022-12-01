@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FretBox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/icon/Fev.png" type="image/x-icon" sizes="16x16 32x32 64x64" />
+    <link rel="shortcut icon" href="images/icon/Fev.png" type="image/x-icon" sizes="16x16 32x32 64x64" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/feature.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css">
+
+<style>
+   
+    
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #BA68C8
+    }
+    
+    .profile-button {
+        background: #BA68C8;
+        box-shadow: none;
+        border: none
+    }
+    
+    .profile-button:hover {
+        background: #682773
+    }
+    
+    .profile-button:focus {
+        background: #682773;
+        box-shadow: none
+    }
+    
+    .profile-button:active {
+        background: #682773;
+        box-shadow: none
+    }
+    
+    .back:hover {
+        color: #682773;
+        cursor: pointer
+    }
+    
+    .labels {
+        font-size: 12px
+    }
+    
+    .add-experience:hover {
+        background: #00afef;
+        color: #fff !important;
+        cursor: pointer;
+        border: solid 1px #00afef
+    }
+
+    h6{
+        font-size:calc(14px + (17 - 14) * ((100vw - 360px) / (1600 - 320))) !important;;
+    }
+    
+    .modal-content{
+        border-radius:0 ;
+        width: calc(360px + 10 * ((100vw - 320px) / 680)) ;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8) ;
+    }
+    
+
+    .modal-content{
+        background: transparent !important;
+    }
+    
+    label{
+        font-size:calc(11px + (13 - 11) * ((100vw - 360px) / (1600 - 320))) !important;;
+        vertical-align: middle !important;
+    }
+    
+    #my-input{
+        vertical-align: middle !important;
+    }
+    
+    .signin{
+        color: #00afef;
+        cursor: pointer;
+    }
+    
+    .custom-control-label span{
+        position: relative ;
+        top: 4px ;
+    }
+    
+    #Submit{
+        font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 320))) !important;;
+        padding:   calc(10px + (14 - 10) * ((100vw - 360px) / (1600 - 320))) !important;;
+        background-color: #00afef !important;
+        border:0px !important;  
+    }
+    
+    button:focus { 
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        outline-width: 0
+    }
+    
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    #email{
+        padding: 23px 7px 18px 7px ;
+        font-size: 15px !important;
+    }
+    
+    .form-control-placeholder {
+        position: absolute;
+        top: 17px;
+        transition: all 300ms;
+        opacity: 0.5; 
+        overflow: hidden;     
+    }
+    
+    .form-control:focus+.form-control-placeholder,
+    .form-control:valid+.form-control-placeholder {
+        position: absolute;
+        top: 9px !important;
+        opacity: 1;
+        background-color: #fff;
+        color: #00afef  !important;
+        font-size: 8px !important;
+     
+    }
+    
+    .form-control:focus{
+        border:1px solid #00afef !important;
+        box-shadow:2px 2px rgba(233, 226, 226, 0.8) !important; 
+    }
+    
+    #modal {
+         box-shadow:2px 2px 10px rgba(0, 0, 0, 0.8) !important;
+         border-radius: 0 !important;
+         border: 0;
+        
+     }
+
+     .btn-gray{
+         box-shadow:3px 7px 7px rgba(0, 0, 0, 0.2) !important; 
+     }
+    
+        </style>
+</style>
+
+</head>
+
+<body>
+    <div class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <img src="images/binarydots.png">
+                        <span>A Product Of Binary Dots Technologies</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <ul>
+                        <li><i class="fas fa-phone"></i><a class="text-dark" href="tel:+91 81270 79900">+91 81270 79900</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="text-dark" href="mailto:info@fretbox.in">info@fretbox.in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apps</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="managementapp-feature.html#managementApp">
+                                For Management
+                            </a>
+                            <a class="dropdown-item" href="managementapp-feature.html#complainantApp">
+                                Complainee App
+                            </a>
+                            <a class="dropdown-item" href="managementapp-feature.html#web-app">For Residents / User</a>
+                            <a class="dropdown-item" href="managementapp-feature.html#web-app">For Security / Staff </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="societies.html">Housing Societies</a>
+                                <a class="dropdown-item" href="hostel.html">Hostels</a>
+                                <a class="dropdown-item" href="societies.html">Business Parks</a>
+                                
+                            </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="feature.html">Platform & Device Independent</a>
+                            <a class="dropdown-item" href="feature.html">Informative Dashboard</a>
+                            <a class="dropdown-item" href="feature.html">Transparency</a>
+                            <a class="dropdown-item" href="feature.html">Multilingual Support</a>
+                            <a class="dropdown-item" href="feature.html">Multichannel Support</a>
+                            <a class="dropdown-item" href="feature.html">Feedback</a>
+                            <a class="dropdown-item" href="feature.html">Reporting & Data Analytics</a>
+                            <a class="dropdown-item" href="feature.html">Customize Support Desk</a>
+                            <a class="dropdown-item" href="feature.html">More Features</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="community-details-bg py-3">
+    <div class="container text-center justify-content-center">
+      
+    </div>
+    <div class="container shadow-lg my-5  bg-white ">
+       
+        <div class="row  py-3"> <div class="col-auto ml-lg-auto mx-auto mx-lg-2 ">  <img width="100%" height="100%" class="logo img-fluid" src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1587719869/logo_ombphs.png"> </div> </div>
+        <div class="section-title">
+            <h2><span>Community</span> Details</h2>
+            <div class="line"></div>
+        </div>
+        <div class="row  community-details">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class=" my-5" src="images/location.jpeg" width="120"><h5 class="font-weight-bold">Premises Society </h5><small class="text-muted my-3"> <i class="fa fa-map-marker"></i>&nbsp; Sn/66/67, Clover Village, S V Road, Wanowrie, Pune-411040</small><small class="mb-2"> <i class="fas fa-phone"></i> +91-85145-XXXXX</small>  <small>  <b><i class="far fa-user-circle" aria-hidden="true"></i> Ashish Gupta</b> </small>  </div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-center services-line">Community Details</h4>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6"><label  va class="labels">Chairman Name</label><input placeholder="Jon Doe" type="text" class="form-control" ></div>
+                        <div class="col-md-6"><label class="labels">Contact</label><input type="text" placeholder="+91-85145-XXXXX" class="form-control" ></div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6"><label class="labels">Manager Name</label><input type="text" placeholder="Jon Doe" class="form-control" ></div>
+                        <div class="col-md-6"><label class="labels">Contact</label><input type="text" placeholder="+91-85145-XXXXX" class="form-control"></div>
+                    </div>
+                    <div class="card my-5 shadow-lg py-3">
+                        <div class="card-body">
+                            <h6 class="card-title text-center"><b>Buildings Description</b></h6>
+                            <div class="row my-3"><div class="col"><div class="form-group mt-1 mb-1"> <input type="text" id="email" class="form-control pl-3 " required> <label class="ml-3 form-control-placeholder" for="email">Buildings Name</label> </div>   </div></div>
+                            <div class="row my-3"><div class="col"><div class="form-group mt-1 mb-1"> <input type="text" id="email" class="form-control pl-3 " required> <label class="ml-3 form-control-placeholder" for="email">No of floor</label> </div>   </div></div>
+                            <div class="row my-3"><div class="col"><div class="form-group mt-1 mb-1"> <input type="text" id="email" class="form-control pl-3 " required> <label class="ml-3 form-control-placeholder" for="email">Flat Size</label> </div>   </div></div>
+                            <div class="row my-3"><div class="col"><div class="form-group mt-1 mb-1">  <textarea id="email"  class="form-control pl-3" id="exampleFormControlTextarea1" required rows="3"></textarea><label class="ml-3 form-control-placeholder" for="exampleFormControlTextarea1">Flat Description</label>  </div> </div></div>
+                        </div>
+                    </div>
+
+                        <div class="mt-5 row justify-content-center mt-3 "> <button type="submit" class="  btn btn-gray add"> Save Details </button></div>
+                    <!-- <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div> -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                    
+                    <div class=" justify-content-between align-items-center experience"><span><h4 class="mb-5 services-line">Buildings Description</h4> </span></div>
+                    <div class="list ">
+                        <div class="d-flex flex-row mt-3 exp-container "><div class="process-item"> <div class="count"> 01. &nbsp; </div> </div>
+                            <div class="work-experience ml-1"><span class="font-weight-bold d-block pr-4">Community Name A <span> <div class="my-auto ml-5 cancel fa fa-times text-danger"></div></span> </span><span class="d-block text-black-50 labels"> <b>Total Floors</b> : 3</span><span class="d-block text-black-50 labels mt-1"> <b class="my-1">Description : </b><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered justify-content-center " role="document">
+        <div class="modal-content  border-0 mx-3">   
+            <div class="modal-body  p-0">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="card-header p-3">
+                                <div class="row align-items-center"><div class="col-auto"><h6 class="mb-0"><b>Contact Sales</b></h6></div><div class="col text-right"><button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="cross" aria-hidden="true">&times;</span> </button></div>  </div> 
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title text-center"><b>Buildings Description</b></h6>
+                                <div class="row my-3"><div class="col"><div class="form-group mt-1 mb-1"> <input type="text" id="email" class="form-control pl-3 " required> <label class="ml-3 form-control-placeholder" for="email">Buildings Name</label> </div>   </div></div>
+                                <div class="row my-3"><div class="col"><div class="form-group mt-1 mb-1"> <input type="text" id="email" class="form-control pl-3 " required> <label class="ml-3 form-control-placeholder" for="email">No of floor</label> </div>   </div></div>
+                                <div class="row my-3"><div class="col"><div class="form-group mt-1 mb-1"> <input type="text" id="email" class="form-control pl-3 " required> <label class="ml-3 form-control-placeholder" for="email">Flat Size</label> </div>   </div></div>
+                                <div class="row my-3"><div class="col"><div class="form-group mt-1 mb-1">  <textarea id="email"  class="form-control pl-3" id="exampleFormControlTextarea1" required rows="3"></textarea><label class="ml-3 form-control-placeholder" for="exampleFormControlTextarea1">Flat Description</label>  </div> </div></div>
+                               
+                                
+                                <div class="row mt-4 mb-3"><div class="col"><button type="button" id="Submit" class="btn btn-primary  btn-block" data-dismiss="modal"><b>Submit</b></button></div></div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+
+  
+<footer class="footer">
+    <div class="container-fluid px-md-auto pl-4 justify-content-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="footer-about">
+                    <h4 class="footer-title">About FretBox</h4>
+                    <p>FretBox is a mission to see happy customers in world. Well implemented into a SAAS product to
+                        improve customer satisfaction score of our customers</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="footer-links">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h4 class="footer-title">Quick Links</h4>
+                            <ul>
+                                <li><a href="about-us.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+                                <li><a href="our-team.html"><i class="fas fa-angle-right"></i> Our Team</a> </li>
+                                <li><a href="careers.html"><i class="fas fa-angle-right"></i> Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h4 class="footer-title">Privacy Policy</h4>
+                            <ul>
+                                <li><a href="terms.html"><i class="fas fa-angle-right"></i> Terms Of Use</a></li>
+                                <li><a href="privacy.html"><i class="fas fa-angle-right"></i>Privacy Policy</a>  </li>
+                                <li><a href="fretbox-faq.html"><i class="fas fa-angle-right"></i> Frequently asked Question</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links col-lg-4 col-md-12 col-12">
+                <div class="row">
+                    <div class="col-md-6 col-auto ">
+                        <h4 class="footer-title">Our Services</h4>
+                        <ul>
+                            <li><a href="societies.html"><i class="fas fa-angle-right"></i>Housing Societies</a></li>
+                            <li><a href="hostel.html"><i class="fas fa-angle-right"></i>Hostels</a>  </li>
+                            <li><a href="societies.html"><i class="fas fa-angle-right"></i>Business Park</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-auto mt-md-0 mt-3">
+                        <h4 class="footer-title">Available on</h4>
+                        <div class="footer-app-download button-group store-buttons ">
+                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.binarydots.fretboxresident">
+                                <img class=" img-fluid" src="images/google-play.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="mt-2 img-fluid" src="images/app-store.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <section class="copyright">
+        <div class="container">
+            <p>© Copyright © BinaryDots Technologies. All Rights Reserved.</p>
+        </div>
+    </section>
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/fretbox.in/" class="facebook" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+        <a href="mailto:business@fretbox.in" class="google"><i class="far fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/company/fretbox/" target="_blank" class="linkedin"><i
+                class="fab fa-linkedin"></i></a>
+    </div>
+
+    <!-- <div id="mailSent">
+            We will contact you soon !!
+        </div> -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d1da64ea1300b53"></script>
+    <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d1da64ea1300b53"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5bdf1f294cfbc9247c1ea886/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+<script>
+    $(document).ready(function(){
+
+        $('.add').click(function(){
+        $(".list").append(
+        '<div class="d-flex flex-row mt-5 exp-container"><div class="process-item"> <div class="count"> 02. &nbsp;</div> </div> <div class="work-experience ml-1"><span class="font-weight-bold d-block">Community Name C <span> <div class="my-auto ml-5 cancel fa fa-times text-danger"></div></span></span><span class="d-block text-black-50 labels"> <b>Total Floors</b> : 3</span><span class="d-block text-black-50 labels mt-1"> <b class="my-1">Description : </b><br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </span></div></div>');
+        });
+        
+        $(".list").on('click', '.cancel', function(){
+        $(this).parent().parent().parent().parent().remove();
+        });
+        
+        });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.feature { padding: 50px 0px; }
+.feature .title {
+    font-weight: 600;
+    line-height: 1.4;
+    color: #263f53;
+    font-size: 34px;
+}
+.feature .second-title {
+    color: #00afef;
+    font-style: italic;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+	.feature .title {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 15px;
+	}
+	.feature .second-title { 
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.feature-image { margin-bottom: 30px; }
+}
+@media only screen and (max-width: 576px) {
+	
+}

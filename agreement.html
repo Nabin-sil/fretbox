@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FretBox Onboarding form</title>
+    <link rel="icon" href="images/icon/Fev.png" type="image/x-icon" sizes="16x16 32x32 64x64" />
+    <link rel="shortcut icon" href="images/icon/Fev.png" type="image/x-icon" sizes="16x16 32x32 64x64" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/feature.css">
+    <link rel="stylesheet" type="text/css" href="css/management-app.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+
+    <!-- New Added -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <script src="js/jquery_prathamesh.min.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/owl.carousel.js"></script>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <section class="why-fretbox " id="aggrement-form">
+
+        <section class="login-block  mb-md-auto mb-sm-5">
+            <div class="row px-sm-0 mx-auto mb-md-auto mb-sm-5">
+                <div class="card col-xl-6 col-md-auto my-auto col-auto p-0">
+                    <div id="carouselExampleIndicators" data-interval="4000" class="carousel slide"
+                        data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class=" img-fluid" height="100%" width="100%"
+                                    src="images/fretboxoperations/IMG-20191218-WA0000.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!--Can add text on carousel imges -->
+                                    <!-- <div class="banner-text">
+                                        <h2>This is Heaven</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class=" img-fluid" height="100%" width="100%"
+                                    src="images/fretboxoperations/IMG-20191217-WA0002.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!--Can add text on carousel imges -->
+                                    <!-- <div class="banner-text">
+                                        <h2>This is Heaven</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class=" img-fluid" height="100%" width="100%"
+                                    src="images/fretboxoperations/IMG-20191207-WA0047.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!--Can add text on carousel imges -->
+                                    <!-- <div class="banner-text">
+                                        <h2>This is Heaven</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-xl-6 mx-auto col col-lg-10 col-auto login-sec mb-xl-auto mb-5">
+                    <div class="row pb-3 d-flex section-title mt-xl-0  mt-5">
+                        <div class="col p-md-auto p-0">
+                            <h1><span>FretBox</span> Joining Agreement </h1>
+                            <h5>Set up a FREE demo TODAY!!</h5>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <form class="login-form" data-toggle="validator" role="form" onsubmit="showOtp(event)">
+                        <p><span class="text-danger">* market field are mandatory to fill.</span></p>
+                        <p id="successMessage" style="display:none" class="text-primary">Thanks for your confirmation.
+                            Our Executive will call you shortly.</p>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group mt-3"> <input type="text" id="txt-name" class="form-control"
+                                        required> <label class="form-control-placeholder" for="txt-name"><i
+                                            class="fas fa-user" aria-hidden="true"></i> &nbsp;Your Name<span class="text-danger">*</span></label> </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group mt-3"> <input type="tel" id="txt-phone" minlength="10" maxlength="10" class="form-control"
+                                        required> <label class="form-control-placeholder" for="txt-phone"> <i
+                                            class="fas fa-phone"></i> &nbsp;Phone number<span class="text-danger">*</span></label> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group mt-3"> <input type="email" id="txt-email" class="form-control"> 
+                                    <label class="form-control-placeholder" for="txt-email"><i
+                                            class="fas fa-envelope" aria-hidden="true"></i> &nbsp; Email</label> </div>
+                            </div>
+                            
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group mt-3"> <input type="text" id="txt-city" class="form-control"
+                                        required> 
+                                    <label class="form-control-placeholder" for="txt-city"> <i
+                                            class="fas fa-map-marked-alt"></i> &nbsp;City<span class="text-danger">*</span></label> </div>
+                            </div>
+                        </div>
+                        <div class="row  align-items-center ">
+                            <div class=" col-12">
+                                <div class="form-group mt-3"> <input type="text" id="txt-organisation"
+                                        class="form-control" required> <label class="form-control-placeholder"
+                                        for="txt-organisation"><i class="fas fa-city"></i> &nbsp; Society/Hostel name<span class="text-danger">*</span></label>
+                                </div>
+                            </div>
+                            <div class=" col-12 align-self-center ">
+                                <div class="form-group mt-4">
+                                    <label class="form-control-placeholder"><i
+                                            class="fas fa-edit"></i> <span class="text-danger">*</span></label>
+                                    <select class="custom-select  form-control" id="sel-community-type" required>
+                                        <option class="" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Community Type</option>
+                                        <option value="HOSTEL">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hostel</option>
+                                        <option value="SOCIETY">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Society </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3 ">
+                            <div class="col-12">
+                                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                    <input data-toggle="modal" type="checkbox" class="custom-control-input" required
+                                        id="customControlInline">
+                                    <label class="custom-control-label" for="customControlInline"> By clicking <strong
+                                            class="badge badge-primary label ">Submit</strong> , you agree to the  <u> <b>Terms and Conditions</b></u> of <b>Fretbox
+                                            Joining Agreement.</b> </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-3 "> <button type="submit" class="  btn btn-gray "> I
+                                am Happy to Join FretBox &nbsp; <i class="fas fa-handshake"></i> </button></div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Modal for society terms & condition  -->
+        <div class="modal fade" id="modelSocietyTnC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="row m-3 justify-content-between">
+                        <div class="col">
+                            <h4 class="modal-title services-line" id="myModalLabel"> <b>Onboarding Agreement - Housing communities</b> </h4>
+                        </div>
+                        <div class="d-sm-block d-none col-auto ml-auto "> <img width="100%" height="100%"
+                                class="logo img-fluid"
+                                src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1587719869/logo_ombphs.png">
+                        </div>
+                    </div>
+
+                    <div class="modal-body m-md-3 mb-0 pb-0">
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col">
+
+                                    <p> We are happy that you have decided to opt for our services. We are glad to have
+                                        you in our FretBox family. FretBox is on its mission to see happy people around
+                                        by improving communication, and easing the processes in housing societies. To
+                                        make this mission successful, we work together with you as a team. To start, you
+                                        need to provide us permission for the points mentioned below </p>
+                                    <ul class="agreement-points">
+                                        <li>Permission to talk& train to the people</li>
+                                        <p>As a part of our training, we might need to talk to society people to explain
+                                            our product & explain how to use. People here include society residents as
+                                            well as society employees (Security guards, manager, committee Etc.) During
+                                            the training period (Normally 2-4 days), FretBox executives will be present
+                                            in your society premises or provide online training for remote installation.
+                                            You hereby give us permission to be present in your society meeting (will be
+                                            informed to us in advance by society management). </p>
+
+                                        <li>Permission for awareness campaign</li>
+                                        <p>To make residents aware about our product & effective communication, you
+                                            hereby give us permission to put our banner on the society main gate &
+                                            pamphlets/ user guide on the society notice boards. FretBox executives might
+                                            visit residents home to help them download the app & explain our product.
+                                        </p>
+
+                                        <li>Confirming Onboarding of FretBox</li>
+                                        <p>By signing this document, you give us permission to talk to people, trained
+                                            people, conduct awareness campaign and agree to our terms and conditions
+                                            &accept our privacy policy to on board FretBox & use our product & services
+                                            for your society operations management. </p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters text-center justify-content-center">
+                        <div class="col-auto mr-xl-4 mr-lg-3 mr-2">
+                            <h5 class="my-auto"><a class="my-auto" href="mailto:business@fretbox.in"><i
+                                        class="fa fa-envelope" aria-hidden="true"></i> business@fretbox.in</a></h5>
+                        </div>
+                        <div class="col-auto">
+                            <h5 class="my-auto"><a class="my-auto" href="#"><i class="fas fa-phone"
+                                        aria-hidden="true"></i> +91 81270 79900</a></h5>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <div class="row ">
+                            <div class="col"> <button type="submit" data-dismiss="modal" class="  btn btn-gray "><i
+                                        class="fas fa-check-circle"></i> &nbsp; I Agree </button> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for society terms & condition  -->
+
+
+        <!-- Modal for hostel terms & condition  -->
+        <div class="modal fade" id="modelHostelTnC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="row m-3 justify-content-between">
+                        <div class="col">
+                            <h4 class="modal-title services-line" id="myModalLabel"> <b>Onboarding Agreement -Hostel communities</b> </h4>
+                        </div>
+                        <div class="d-sm-block d-none col-auto ml-auto "> <img width="100%" height="100%"
+                                class="logo img-fluid"
+                                src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1587719869/logo_ombphs.png">
+                        </div>
+                    </div>
+
+                    <div class="modal-body m-md-3 mb-0 pb-0">
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col">
+
+                                    <p> We are happy that you have decided to opt for our services. We are glad to have
+                                        you in our FretBox family. FretBox is on its mission to see happy people around
+                                        by improving communication, and easing the processes in housing societies. To
+                                        make this mission successful, we work together with you as a team. To start, you
+                                        need to provide us permission for the points mentioned below </p>
+                                    <ul class="agreement-points">
+                                        <li>Permission to talk& train to the people</li>
+                                        <p>As a part of our training, we might need to talk to hostel people to explain
+                                            our product & explain how to use. People here include hostel residents as
+                                            well as hostel employees (Security guards, manager, committee Etc.)
+                                            During the training period (Normally 2-4 days), FretBox executives will be
+                                            present in your hostel premises. You hereby give us permission to be present
+                                            in your hostel meeting (will be informed to us in advance by hostel
+                                            management) Or we provide online training for remote installation. </p>
+
+                                        <li>Permission for awareness campaign</li>
+                                        <p>To make residents aware about our product & effective communication, you
+                                            hereby give us permission to put our banner on the society main gate &
+                                            pamphlets/ user guide on the society notice boards. FretBox executives might
+                                            visit residents home to help them download the app & explain our product.
+                                        </p>
+
+                                        <li>Confirming Onboarding of FretBox</li>
+                                        <p>By signing this document, you give us permission to talk to people, trained
+                                            people, conduct awareness campaign and agree to our terms and conditions
+                                            &accept our privacy policy to on board FretBox & use our product & services
+                                            for your society operations management. </p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters text-center justify-content-center">
+                        <div class="col-auto mr-xl-4 mr-lg-3 mr-2">
+                            <h5 class="my-auto"><a class="my-auto" href="mailto:business@fretbox.in"><i
+                                        class="fa fa-envelope" aria-hidden="true"></i> business@fretbox.in</a></h5>
+                        </div>
+                        <div class="col-auto">
+                            <h5 class="my-auto"><a class="my-auto" href="#"><i class="fas fa-phone"
+                                        aria-hidden="true"></i> +91 81270 79900</a></h5>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <div class="row ">
+                            <div class="col"> <button type="submit" data-dismiss="modal" class="  btn btn-gray "><i
+                                        class="fas fa-check-circle"></i> &nbsp; I Agree </button> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for hostel terms & condition  -->
+        <!-- Modal Pop for OTP  start -->
+        <div class="modal fade" id="otp-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Verify Mobile Number</h5>
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                        <!-- <span aria-hidden="true">&times;</span> -->
+
+                    </div>
+                    <div class="modal-body">
+                        <form onsubmit="contactUs(event)" id="otpConfirmationForm">
+                            <p id="otpSuccessMessage"  class="text-primary">We have just sent one
+                                time password to your phone number -<span class="text-success" id="otpPhoneNumber"></span>.</p>
+                            <div class="form-group">
+                                <label for="otp">Enter your four-digit OTP :</label>
+                                <input type="tel" class="form-control" maxlength="4" minlength="4" id="otp" aria-describedby="otp-input"
+                                    placeholder="Enter OTP" required>
+                                <a onclick="resendOtp()" href="#" id="otp-input"
+                                    class="form-text teOTP-muted text-primary"> <u>Resend OTP</u></a>
+                            </div>
+                            <div class="form-group"><button type="submit" class="btn btn-primary">Verify</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Change Phone Number</button></div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Pop for OTP  end-->
+    </section>
+    <script>document.getElementById("field_terms").setCustomValidity("Please indicate that you accept Fretbox Joining Agreement Terms and Conditions"); </script>
+
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+    <script>
+        bootstrapValidate('#txt-name', 'required:Please enter your name.');
+        bootstrapValidate('#txt-city', 'required:Please enter your city.');
+        bootstrapValidate('#txt-organisation', 'required:Please enter your organisation name.');
+        bootstrapValidate('#txt-organisation', 'min:4:Organisation name must be min 4 character.');
+        bootstrapValidate('#txt-email', 'email:Please enter a valid E-Mail Address.');
+        bootstrapValidate('#txt-phone', 'numeric:Please only enter numeric characters.');
+        bootstrapValidate('#txt-phone', 'max:10:Please enter a valid mobile No.');
+        bootstrapValidate('#txt-phone', 'min:10:Please enter a valid mobile No.');
+        bootstrapValidate('#sel-community-type', 'required:Please confirm the community type.');
+        bootstrapValidate('#otp', 'required:Please enter one time password sent to your phone number.');
+        bootstrapValidate('#otp', 'max:4:One time password must be of 4 digit.');
+        bootstrapValidate('#otp', 'min:4:One time password must be of 4 digit.');
+        var contactData = {};
+        function showOtp(e) {
+            e.preventDefault();
+
+            var name = $("#txt-name").val();
+            var email = $("#txt-email").val();
+            var phone = $("#txt-phone").val();
+            var org = $("#txt-organisation").val();
+            var city = $("#txt-city").val();
+            var community_type = $("#sel-community-type").val();
+            contactData = {
+                "name": name,
+                "email": email,
+                "contact_no": phone,
+                "address": city,
+                "community_name": org,
+                "community_type": community_type
+            };
+            data = {
+                "contact_no": phone,
+            };
+            $(".loader").show();
+            $("#otpPhoneNumber").text(phone);
+            $.ajax({
+                url: "https://www.fbresident.fretbox.in/api/sendPublicUserOtp",
+                type: "POST",
+                data: data,
+                dataType: 'json',
+                success: function (response, textStatus, jqXHR) {
+                     $(".loader").hide();
+                    if (!response.error) {
+                        $("#otp-modal").modal({ "backdrop": "static", 'keyboard': true, "show": true });
+                    } else {
+                        alert("Phone number is not valid.");
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $(".loader").hide();
+                    alert("Some technical error at server.");
+                }
+            });
+
+        }
+
+        function resendOtp() {
+            // e.preventDefault();
+
+
+            data = {
+                "contact_no": contactData.contact_no,
+            };
+             $(".loader").show();
+            $.ajax({
+                url: "https://www.fbresident.fretbox.in/api/sendPublicUserOtp",
+                type: "POST",
+                data: data,
+                dataType: 'json',
+                success: function (response, textStatus, jqXHR) {
+                   $(".loader").hide();
+                    if (!response.error) {
+                        $("#otpSuccessMessage").animate({fontSize: '3em'}, "slow");
+                        $("#otpSuccessMessage").animate({fontSize: '1em'}, "slow");
+                    } else {
+                        alert("Phone number is not valid.");
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $(".loader").hide();
+                    alert("Some technical error at server.");
+                }
+            });
+
+        };
+        function contactUs(e) {
+            e.preventDefault();
+
+            contactData.otp = $("#otp").val();
+             $(".loader").show();
+            $.ajax({
+                url: "https://www.fbresident.fretbox.in/api/joiningAgreement",
+                type: "POST",
+                data: contactData,
+                dataType: 'json',
+                success: function (response, textStatus, jqXHR) {
+                    $(".loader").hide();
+                    if (!response.error) {
+                        $("#otp-modal").modal("hide");
+                        $("#successMessage").fadeIn().fadeOut(8000);
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $(".loader").hide();
+                    alert("Some technical error at server.");
+                }
+            });
+        }
+
+        $('input[type="checkbox"]').on('change', function (e) {
+            if (e.target.checked) {
+                var community_type = $("#sel-community-type").val();
+                if(community_type=="HOSTEL"){
+                    $('#modelHostelTnC').modal("show");
+                }else if (community_type=="SOCIETY"){
+                    $('#modelSocietyTnC').modal("show");
+                }
+            }
+        });
+
+    </script>
+   
+</body>
+
+</html>

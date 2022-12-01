@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FretBox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/icon/Fev.png" type="image/x-icon" sizes="16x16 32x32 64x64" />
+    <link rel="shortcut icon" href="images/icon/Fev.png" type="image/x-icon" sizes="16x16 32x32 64x64" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/feature.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css">
+
+</head>
+
+<body>
+    <div id="overlay">
+        <div id="box">
+            <div id="progstat"></div>
+            <div id="progress"></div>
+        </div>
+    </div>
+    <!-- <div class="loader"></div> -->
+     <header id="header-section"></header>
+
+    <div class="contactus pt-5">
+        <div class="container">
+
+            <div class="section-title">
+                <h2><span>Contact</span> Us</h2>
+                <div class="line"></div>
+            </div>
+            <div class="row flex-lg-row flex-column-reverse">
+                <div class="col-12">
+                    <div class="row mb-md-5 mb-3">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="contact-details">
+                                <h3>Sales</h3>
+                                <div>
+                                    <p><span>Call:-</span>Sidharth Kaul <a href="tel:+919811260310" > <b>+91 98112 60310</b> </a>
+                                        <p>
+                                            <p><span>Email:-</span> <b><a class="my-auto" href="mailto: business@fretbox.in"> business@fretbox.in</a></b>
+                                                <p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="contact-details">
+                                <h3>Pune</h3>
+                                <div>
+                                    <p><b>Address:-</b>
+                                        <p>
+                                            <p><a href="https://goo.gl/maps/WWzWDreRixs5QYFMA"  target="_blank"> <b>DSK Sundarban Phase 1, Near Amanora Mall, Hadapsar Pune</b> </a>
+                                                <p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="contact-details">
+                                <h3>Bhopal</h3>
+                                <div>
+                                    <p><b>Address:-</b>
+                                        <p>
+                                            <p><a href="javascript:void(0)" > <b>Shop No. 18 A Block Near Aalam Nagar Masjid Ratanagiri Petrol Pump, Bhopal</b> </a>
+                                                <p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <br/>
+                            <div class="contact-details">
+                                <h3>Any talk</h3>
+                                <div>
+                                    <p><span>Call:-</span><b>Ashish (CEO)</b> <a href="tel:+918127079900" > <b> +91 81270 79900</b> </a>
+                                        <p>
+                                            <p><span>Email:-</span> <b><a class="my-auto" href="mailto:ashish@fretbox.in">ashish@fretbox.in</a> </b>
+                                                <p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <br/>
+                            <div class="contact-details">
+                                <h3>Middle East</h3>
+                                <div>
+                                    <p><span>Call:-</span> <a href="tel:+973 17151000" > <b> +973 17151000</b> </a>
+                                        <p>
+                                            <p><span>Email:-</span> <b><a class="my-auto" href="mailto:business.bh@fretbox.in">business.bh@fretbox.in
+</a> </b>
+                                                <p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div id="free-banner"></div>
+
+                    </div>
+                    <div class="row mt-5 pt-3">
+                        <div class="col-lg-6 d-md-block d-none col-xl-4 col-md-12 col-12">
+                            <img src="images/contact-us.png" alt="" class="img-fluid mb-5">
+                        </div>
+                        <!-- <div class="col-lg-6 align-self-stretch"> <img height="100%" width="100%" src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1588609705/Asset_2_300x-8_oss68q.png" alt=""> </div> -->
+                        <div class="col-lg-6 col-xl-6 col-12">
+                            <div class="alert alert-success alert-dismissible" style="display: none" id="alert-success">
+                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                <strong>Thank You .</strong> will cotact you soon
+                            </div>
+                            <form data-toggle="validator" role="form" onsubmit="showOtp(event)">
+                                <p><span class="text-danger">* market field are mandatory to fill.</span></p>
+                                <p id="successMessage" style="display:none" class="text-primary">Thanks for your
+                                    confirmation.
+                                    Our Executive will call you shortly.</p>
+                                <div class="contact-form">
+                                    <div class="form-group">
+                                        <label>Fullname*</label>
+                                        <input type="text" id="txt-name" class="form-control" required
+                                            placeholder="Enter Fullname" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" id="txt-email" class="form-control"
+                                            placeholder="Enter Email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Phone*</label>
+                                        <input type="tel" id="txt-phone" class="form-control" required
+                                            placeholder="Enter Phone" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Community</label>
+                                        <input type="text" id="txt-Organisation" class="form-control"
+                                            placeholder="Enter Name of society/hostel" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Subject*</label>
+                                        <select class="custom-select  form-control" id="sel-sub" required>
+                                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Select Subject*</option>
+                                            <option value="1">&nbsp;&nbsp;&nbsp;&nbsp; Sales Inquiry</option>
+                                            <option value="2">&nbsp;&nbsp;&nbsp;&nbsp; General Inquiry</option>
+                                            <option value="3">&nbsp;&nbsp;&nbsp;&nbsp; Investors Enquiry</option>
+                                            <option value="4">&nbsp;&nbsp;&nbsp;&nbsp; Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Message</label>
+                                        <textarea rows="3" id="txt-msg" class="form-control"
+                                            placeholder="Write Message..."></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row justify-content-center  mt-2">
+                                            <button type="submit" class="  btn btn-gray "> Enquiry Now &nbsp; <i
+                                                    class="fas fa-handshake" aria-hidden="true"></i></button>
+
+                                            <!-- <button type="submit" class="btn btn-submit">Send Enquiry</button>  -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="map mt-5 pt-5 p-0 m-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2800327828686!2d73.93474821484268!3d18.516243387411503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c39cf5db6d83%3A0x9c91869ea7a32fe4!2sDSK%20Sundarban%20Phase%201!5e0!3m2!1sen!2sin!4v1627356524900!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+
+    <container id="footer"></container>
+
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/fretbox.in/" class="facebook" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+        <a href="mailto:business@fretbox.in" class="google"><i class="far fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/company/fretbox/" target="_blank" class="linkedin"><i
+                class="fab fa-linkedin"></i></a>
+    </div>
+    <!-- <div id="mailSent">
+            We will contact you soon !!
+        </div> -->
+
+    <!-- Modal Pop for OTP  start -->
+    <div class="modal fade " id="otp-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Verify Mobile Number</h5>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                    <!-- <span aria-hidden="true">&times;</span> -->
+
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="contactUs(event)" id="otpConfirmationForm">
+                        <p id="otpSuccessMessage" class="text-primary">We have just sent one
+                            time password to your phone number -<span class="text-success" id="otpPhoneNumber"></span>.
+                        </p>
+                        <div class="form-group">
+                            <label for="otp">Enter your four-digit OTP :</label>
+                            <input type="tel" class="form-control" maxlength="4" minlength="4" id="otp"
+                                aria-describedby="otp-input" placeholder="Enter OTP" required>
+                            <a onclick="resendOtp()" href="#" id="otp-input" class="form-text teOTP-muted text-primary">
+                                <u>Resend OTP</u></a>
+                        </div>
+                        <div class="form-group"><button type="submit" class="btn btn-primary">Verify</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Change Phone
+                                Number</button></div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Pop for OTP  end-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d1da64ea1300b53"></script>
+    <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d1da64ea1300b53"></script>
+    <script>
+    $(function(){
+      $("#header-section").load("header.html");
+      $("#footer").load("footer.html");
+      $("#free-banner").load("free_fretbox_banner.html");
+    });
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5bdf1f294cfbc9247c1ea886/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script>
+        bootstrapValidate('#txt-name', 'required:Please enter your name');
+        bootstrapValidate('#txt-email', 'email:Pleae enter a valid E-Mail Address!');
+        bootstrapValidate('#txt-phone', 'numeric:Please only enter numeric characters!');
+        bootstrapValidate('#txt-phone', 'max:10:Please enter a valid mobile No.');
+        bootstrapValidate('#txt-phone', 'min:10:Please enter a valid mobile No.');
+        bootstrapValidate('#sel-sub', 'required:Please confim the enquiry type');
+        bootstrapValidate('#otp', 'required:Please enter one time password sent to your phone number.');
+        bootstrapValidate('#otp', 'max:4:One time password must be of 4 digit.');
+        bootstrapValidate('#otp', 'min:4:One time password must be of 4 digit.');
+        var contactData = {};
+        function showOtp(e) {
+            e.preventDefault();
+
+            var name = $("#txt-name").val();
+            var email = $("#txt-email").val();
+            var phone = $("#txt-phone").val();
+            var msg = $("#txt-msg").val();
+            var org = $("#txt-organisation").val();
+            var city = $("#txt-city").val();
+            contactData = {
+                "name": name,
+                "email": email,
+                "contact_no": phone,
+                "message": msg,
+                // "designation":"",
+                "address": org + " " + city,
+                "subject": $("#sel-sub").val()
+            };
+            data = {
+                "contact_no": phone,
+            };
+            $(".loader").show();
+            $("#otpPhoneNumber").text(phone);
+            $.ajax({
+                url: "https://www.base.fretbox.in/services/public/index.php/api/sendPublicUserOtp",
+                type: "POST",
+                data: data,
+                dataType: 'json',
+                success: function (response, textStatus, jqXHR) {
+                    $(".loader").hide();
+                    if (!response.error) {
+                        $("#otp-modal").modal({ "backdrop": "static", 'keyboard': true, "show": true });
+                    } else {
+                        alert("Phone number is not valid.");
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $(".loader").hide();
+                    alert("Some technical error at server.");
+                }
+            });
+
+        }
+
+        function resendOtp() {
+            // e.preventDefault();
+
+
+            data = {
+                "contact_no": contactData.contact_no,
+            };
+            $(".loader").show();
+            $.ajax({
+                url: "https://www.base.fretbox.in/services/public/index.php/api/sendPublicUserOtp",
+                type: "POST",
+                data: data,
+                dataType: 'json',
+                success: function (response, textStatus, jqXHR) {
+                    $(".loader").hide();
+                    if (!response.error) {
+                        $("#otpSuccessMessage").animate({ fontSize: '3em' }, "slow");
+                        $("#otpSuccessMessage").animate({ fontSize: '1em' }, "slow");
+                    } else {
+                        alert("Phone number is not valid.");
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $(".loader").hide();
+                    alert("Some technical error at server.");
+                }
+            });
+
+        };
+        function contactUs(e) {
+            e.preventDefault();
+
+            contactData.otp = $("#otp").val();
+            $(".loader").show();
+            $.ajax({
+                url: "https://www.base.fretbox.in/services/public/index.php/api/enquiry",
+                type: "POST",
+                data: contactData,
+                dataType: 'json',
+                success: function (response, textStatus, jqXHR) {
+                    $(".loader").hide();
+                    if (!response.error) {
+                        $("#otp-modal").modal("hide");
+                        $("#successMessage").fadeIn().fadeOut(8000);
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $(".loader").hide();
+                    alert("Some technical error at server.");
+                }
+            });
+        }
+
+    </script>
+
+<script type="text/javascript">
+
+    ;(function(){
+      function id(v){ return document.getElementById(v); }
+      function loadbar() {
+        var ovrl = id("overlay"),
+            prog = id("progress"),
+            stat = id("progstat"),
+            img = document.images,
+            c = 0,
+            tot = img.length;
+        if(tot == 0) return doneLoading();
+
+        function imgLoaded(){
+          c += 1;
+          var perc = ((100/tot*c) << 0) +"%";
+          prog.style.width = perc;
+          stat.innerHTML = "Loading "+ perc;
+          if(c===tot) return doneLoading();
+        }
+        function doneLoading(){
+          ovrl.style.opacity = 0;
+          setTimeout(function(){
+            ovrl.style.display = "none";
+          }, 1200);
+        }
+        for(var i=0; i<tot; i++) {
+          var tImg     = new Image();
+          tImg.onload  = imgLoaded;
+          tImg.onerror = imgLoaded;
+          tImg.src     = img[i].src;
+        }
+      }
+      document.addEventListener('DOMContentLoaded', loadbar, false);
+    }());
+
+
+
+    </script>
+</body>
+
+</html>

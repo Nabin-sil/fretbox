@@ -1,0 +1,112 @@
+/* Management App Feature */
+.page-title {
+	background-image: url(../images/pattern.svg);
+    background-color: #00afef;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.page-title h3 {
+	font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFF;
+	margin-bottom: 0;
+}
+.page-title p {
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255,255,255,0.8);
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.our-features { padding: 50px 0; }
+.our-features .card-body span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+.our-features .card-body { padding: 15px; }
+.our-features .card-body ul li {
+	font-size: 15px;
+	padding-bottom: 15px;
+	display: flex;
+	align-items: baseline;
+}
+.our-features .card-body ul li:last-child { padding-bottom: 0; }
+.our-features .card-body ul li i {
+	font-size: 12px;
+	color: #00afef;
+	margin-right: 10px;
+}
+
+
+
+/* 
+.why-fretbox {
+    padding: 70px 0;
+} */
+.app-feature-box {
+    margin-bottom: 40px;
+}
+.app-feature-box .feature-icon {
+    width: 35px;
+    margin-bottom: 10px;
+}
+.app-feature-box .feature-card-head {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.arrow-up-down {
+    background: #000;
+}
+
+/* .mobile-slider-container::before {
+    content: '';
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTodsqRenyHm3MRvctW5wmamKGBxSEY5mpewB3EvjbS5Q4SamCX);
+    position: absolute;
+    width: 95%;
+    height: 100%;
+} */
+.mobile-slider {
+    background: url(../images/iphone6-gold.png);
+    width: 300px;
+    height: 550px;
+    position: relative;
+    margin: 0 auto;
+    background-size: cover;
+    z-index: 1;
+}
+
+.mobile-slider .carousel {
+    position: absolute;
+    top: 57px;
+    left: 36px;
+}
+.mobile-slider .carousel-item img {
+    width: 227px;
+    height: 403px;
+}
+
+.app-feature-box .feature-card-head {
+    margin-bottom: 5px;
+}
+.app-feature-box p {
+    margin-bottom: 0px;
+}
+
+.rightside { text-align: right; }
+
+@media only screen and (max-width: 991px) {
+	.rightside { text-align: center!important; }
+	.our-features .card { margin-bottom: 20px; }
+}
+.rightside1 { text-align: left!important; }
+@media only screen and (max-width: 991px) {
+	.rightside1 { text-align: center!important; }
+}
